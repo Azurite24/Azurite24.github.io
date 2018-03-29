@@ -1,0 +1,95 @@
+body {
+  color: white;
+  font-family: sans-serif;
+  padding: 5%;
+  top:0;
+  padding-top: 0px;
+  margin-top:0px;
+}
+body a {color: white;
+}
+
+#nav {
+  background: url(dark_geometric.png);
+  color: white;
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.5em;
+  padding: 1%;
+  background: black;
+  text-align: center;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  top: 0;
+}
+
+/*link styles*/
+a:default{
+  text-decoration: none;
+}
+
+a:visited{
+}
+
+#nav a {
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+#header h1{
+  text-align: center;
+  color: black;
+  font-family: 'Indie Flower', cursive;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Indie Flower', cursive;
+
+}
+
+#body{
+  border: solid, 1px, black;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 80%;
+    padding: 10px;
+    color: white;
+    background:url(dark_geometric.png);
+}
+.column img {
+  width: 100%;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+#moreinfo {
+  color: black;
+}
+#moreinfo h4 {
+  font-size: 1.5em;
+}
+#moreinfo h5 {
+  font-size: 1.2em;
+}
