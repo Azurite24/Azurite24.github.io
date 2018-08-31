@@ -8,7 +8,24 @@
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 
       <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <script>
+      function changeText(icon) {
+	//Checks which job title was clicked
+	if (icon == "dms") {
+		document.getElementById("content1").innerHTML =
+			"<h3>Nev's Ink, Inc</h3> <p>May 2017 - February 2018</p> <h4>Activities Performed</h4><ul><li>Managed websites and social media</li><li>Upgraded to cloud server to improve page load time</li><li>Collaborated to launch new redesigne manufacturer and vendor bidding websites</li><li>Ensured social media presence by copywriting blog articles and social media posts</li><li>Improved Amazon listing and website images by photographing products and writing copy</li></ul>";
+	} else if (icon == "swt") {
+		document.getElementById("content1").innerHTML =
+			"<h3>University of Wisconsin - Platteville</h3><p>December 2014 - January 2017</p><h4>Activities Performed</h4><ul><li>Collaborated with campus departments to implement and edit various webforms</li><li>Handled job fair sponsor graphics for the bi-annual job fair on campus to create image maps leading to each individual sponsor website</li>		<li>Corrected website spelling and grammer errors</li><li>Internship project - Migrating four Drupal content sections into one main section: the Academic Support Programs content section.</li></ul>";
+	} else if (icon == "itsw") {
+		document.getElementById("content1").innerHTML =
+			"<h3>Cardinal Stritch University</h3><p>September 2012 - May 2013</p><h4>Activities Performed</h4><ul><li>Provided phone support for current students, teachers and alumni</li><li>Resetting passwords and troubleshooting various computer problems</li><li>Logged customer complaints and assigned to the appropriate representive if needed</li></ul>";
+	} else if (icon == "generac") {
+		document.getElementById("content1").innerHTML =
+			"<h3>Generac Headquarters</h3><p>May 2018 - Present</p><h4>Activities Performed</h4><ul><li>Wrote SEO content and targetted seasonal content</li><li>Industry and culture research for expanding website</li><li>Introduced to Kentico CMS</li><li>Experience working on a team, delegating tasks and working with other departments</li></ul>";
+	}
+}
+</script>
     <a name="top"></a>
   </head>
 
@@ -49,59 +66,18 @@
 
           <h4 style="  font-size: 1.5em; text-align: center;">Relevant Work Experience</h4>
 
-<!--Accordion start-->
-        <button class="accordion">Digital Marketing Specialist</button>
-          <div class="panel">
-            <p>Nev's Ink, Inc.</p>
-            <p>May 2017 - February 2018</p>
-              <ul>
-                <li>Managed websites and social media</li>
-                <li>Upgraded to cloud server to improve page load time</li>
-                <li>Collaborated to launch new redesigne manufacturer and vendor bidding websites</li>
-                <li>Ensured social media presence by copywriting blog articles and social media posts</li>
-                <li>Improved Amazon listing and website images by photographing products and writing copy</li>
-              </ul>
-          </div>
-
-        <button class="accordion">Student Web Technologist</button>
-          <div class="panel">
-            <p>University of Wisconsin - Platteville</p>
-            <p>December 2014 - January 2017</p>
-              <ul>
-                  <li>Collaborated with campus departments to implement and edit various webforms</li>
-                  <li>Handled job fair sponsor graphics for the bi-annual job fair on campus to create image maps leading to each individual sponsor website</li>
-                  <li>Corrected website spelling and grammer errors</li>
-                  <li>Internship project - Migrating four Drupal content sections into one main section: the <a href="https://www.uwplatt.edu/academic-support">Academic Support Programs</a> content section.</li>
-              </ul>
-        </div>
-
-        <button class="accordion">IT Helpdesk Student Worker</button>
-          <div class="panel">
-            <p>Cardinal Stritch University</p>
-            <p>September 2012 - May 2013</p>
-            <ul>
-                <li>Provided phone support for current students, teachers and alumni</li>
-                <li>Resetting passwords and troubleshooting various computer problems</li>
-                <li>Logged customer complaints and assigned to the appropriate representive if needed</li>
-            </ul>
-        </div>
-
-        <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.display === "block") {
-                    panel.style.display = "none";
-                } else {
-                    panel.style.display = "block";
-                }
-            });
-        }
-        </script>
+<div class="icon-bar">
+	<a id="dms" onclick="changeText('dms');" href="#">
+		Digital Marketing Specialist</a>
+	<a id="swt" onclick="changeText('swt');" href="#">Student Web Technologist</a>
+	<a id="itsw" onclick="changeText('itsw');" href="#">IT Helpdesk Student Worker</a>
+	<a id="generac" onclick="changeText('generac');" href="#">Content Specialist</a>
+	
+</div>
+<div id="content">
+	<h1>Relevant Work History</h1>
+	<p id="content1">Hi there, click a job title above to view my relevant work history.</p>
+</div>
 
   </body>
 </html>
