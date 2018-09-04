@@ -44,6 +44,10 @@ body a {color: white;
   height: 200px;
 }
 
+.column img{
+border-radius: 5%;
+}
+
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Indie Flower', cursive;
 color: black;
