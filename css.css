@@ -140,6 +140,7 @@ body{
 }
 #refresh button {
 	width: 100%;
+	display:none;
 }
 
 /*Portfolio Grid*/
