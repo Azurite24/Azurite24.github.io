@@ -188,3 +188,15 @@ body{
 }
   }
     /*end of portfoliocontainer*/
+
+@media only screen and (max-width: 750px) {
+    .icon-bar {
+    	margin-left:25%;
+	margin-right: auto;
+	width: 50%;
+    	background-color: #00112d;
+    	overflow: auto;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 2vw;
+}
