@@ -132,15 +132,6 @@ body{
 	font-size: 1.5em;
 }
 
-#refresh{
-	width: 50%;
-	margin-left: 25%;
-	margin-right: auto;
-}
-#refresh button {
-	width: 50%;
-}
-
 /*Portfolio Grid*/
 #portfoliocontainer .row {
     display: -ms-flexbox; /* IE10 */
