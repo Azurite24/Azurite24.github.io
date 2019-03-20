@@ -181,9 +181,9 @@ body{
 
 @media only screen and (max-width: 750px) {
     .icon-bar {
-    	margin-left:25%;
+    	margin-left: 5%;
 	margin-right: auto;
-	width: 50%;
+	width: 90%;
     	background-color: #00112d;
     	overflow: auto;
 	border-radius: 10px;
