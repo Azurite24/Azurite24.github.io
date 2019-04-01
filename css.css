@@ -5,7 +5,9 @@ body {
   top:0;
   padding-top: 0px;
   margin-top:0px;
-  background-color: #cec2f9;
+  background-image: url('https://images.pexels.com/photos/32237/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size: cover;
+  background-attachment: fixed;
 }
 body a {color: white;
 }
