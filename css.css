@@ -1,194 +1,121 @@
-body {
-  color: white;
-  font-family: sans-serif;
-  padding: 5%;
-  top:0;
-  padding-top: 0px;
-  margin-top:0px;
-  background-image: url('https://images.pexels.com/photos/32237/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-  background-size: cover;
-  background-attachment: fixed;
-}
-body a {color: white;
+body{
+	background-color: #e8f0ff;
+	font-family: 'Raleway', sans-serif;
 }
 
 #nav {
-  background: url(dark_geometric.png);
-  color: white;
-  font-family: 'Indie Flower', cursive;
-  font-size: 1.5em;
-  padding: 1%;
-  background: black;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+	font-size: 1.2em;
+}
+
+#nav li {
+  float: right;
+	padding-left: 5%;
+	position: sticky;
+	position: -webkit-sticky; /* Safari */
+}
+
+#nav li a {
+  display: block;
+  color: #000;
   text-align: center;
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  top: 0;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-#nav a {
-  padding-left: 1%;
-  padding-right: 1%;
+#nav li a:hover{
+	color: #3537b8;
+	text-shadow: 1px 1px 15px #3537b8;
 }
 
-#header{
-  text-align: center;
-  color: #fff;
-  font-family: 'Indie Flower', cursive;
-  padding-top: 5%;
-  padding-bottom: 10%;
-}
-#header img{
-  border-radius: 50%;
-  height: 200px;
-}
-
-.column img{
-border-radius: 0%;
-width: 100%;
-}
-
-h1,h2,h3,h4,h5,h6 {
-  font-family: 'Indie Flower', cursive;
-color: black;
-}
-
-#body{
-  border: solid, 1px, black;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-#columncontainer{
- background:url(dark_geometric.png);
- width: 100vw;
- position: relative;
- left: 50%;
- right: 50%;
- margin-left: -50vw;
- margin-right: -50vw;
- top: 0;
- padding: 10%;
-}
-
-/* Create two equal columns that floats next to each other */
- .column {
-    float: left;
-    width: 80%;
-    padding: 10px;
-    color: white;
-}
- .column img {
-  width: 100%;
-}
-/* Clear floats after the columns */
- .row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  #columncontainer .column {
-        width: 100%;
-    }
-}
-
-body{
-	font-family: 'Montserrat', sans-serif;
-}
-/*Start of clickable "icon" bar for relevant work exp*/
-.icon-bar {
-    width: 100%;
-    background-color: #00112d;
-    overflow: auto;
-		border-radius: 10px;
-}
-
-.icon-bar a {
-    float: left;
-    width: 25%;
-    text-align: center;
-    padding: 3% 0;
-    transition: all 0.3s ease;
-    color: #0ed1cd;f
-    font-size: 1.5em;
-}
-
-.icon-bar a:hover {
-    background-color: #b7e8ff;
-		color: black;
-}
-#content{
-	color: #00112d;
-	margin-left: 5%;
-	margin-right: 5%;
-}
-
-/*Portfolio Grid*/
-#portfoliocontainer .row {
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-    padding: 0 4px;
-	border-radius: 0px;
-}
-
-/* Create four equal columns that sits next to each other */
-#portfoliocontainer .column {
-    -ms-flex: 25%; /* IE10 */
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-}
-
-#portfoliocontainer .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-    .column {
-        -ms-flex: 50%;
-        flex: 50%;
-        max-width: 50%;
-    }
-	#portfoliocontainer .column{
-		-ms-flex: 50%;
-        flex: 50%;
-        max-width: 50%;
-	}
-    .icon-bar{
-	    font-size: 1.5vw;
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .column {
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
-    }
-}
-  }
-    /*end of portfoliocontainer*/
-
-@media only screen and (max-width: 750px) {
-    .icon-bar {
-    	margin-left: 5%;
-	margin-right: auto;
-	width: 90%;
-    	background-color: #00112d;
-    	overflow: auto;
-	border-radius: 10px;
+.heading{
 	text-align: center;
-	font-size: 2vw;
+	padding-top: 5%;
+}
+
+.heading img{
+	border-radius: 50%;
+	width: 20%;
+}
+
+h2{
+	border-bottom: 2px dotted #5d88d0;
+	padding: 3%;
+}
+
+.exp{
+	padding: 5%;
+	padding-bottom: 0;
+}
+
+a{
+	color: #2b03a3;
+}
+
+button{
+	padding: 1%;
+	margin-left: 2%;
+	background-color: #5d88d0;
+	color: #fff;
+	width: 30%;
+	height: 60px;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	transition-timing-function: ease-in-out;
+	transition: .25s;
+}
+
+button:hover{
+	box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5), 0 8px 20px 0 rgba(0, 0, 0, 0.5);
+	background-color: #192874;
+	color: #fff;
+}
+button:active{
+	box-shadow: none;
+	-moz-box-shadow: inset 0 0 15px #000000;
+  -webkit-box-shadow: inset 0 0 15px #000000;
+  box-shadow: inset 0 0 15px #000000;
+}
+
+.colcontainer {
+  display: flex;
+	flex-wrap: wrap;
+	flex-flow: center;
+	margin-left: 25%;
+	margin-bottom: 25px;
+}
+
+.firstCol{
+	width: 50%;
+}
+
+.secondCol{
+	width: 25%;
+	padding-left: 1%;
+}
+
+@media only screen and (max-width: 800px) {
+	button{
+		width: 100%;
+		padding: 2%;
+		margin: 1%;
+	}
+	button:hover{
+		width: 100%;
+	}
+	.aboutMe img{
+	display: none;
+	}
+	.secondCol, .firstCol{
+		width: 100%;
+		padding: 0px;
+	}
+	.heading img{
+		width: 150px;
+	}
 }
