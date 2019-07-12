@@ -44,16 +44,20 @@ body{
 
 h2{
 	border-bottom: 2px dotted #5d88d0;
-	padding: 3%;
+	padding: 30px 5%;
+	font-size: 2em;
 }
 
 .exp{
-	padding: 5%;
-	padding-bottom: 0;
+	padding: 10px 5%;
 }
 
 a{
-	color: #2b03a3;
+	color: #192874;
+}
+
+a:hover{
+	text-shadow: 2px 2px 15px #3537b8;
 }
 
 button{
