@@ -11,6 +11,34 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 
+<script type="text/javascript">
+	function jobHist(job){
+	var result = "";
+
+	switch(job) {
+		case "dcs":
+			result = "<h3>Generac Headquarters</h3><p>May 2018 - Present</p><h4>Activities Performed</h4><ul><li>Wrote SEO content and targetted seasonal content</li><li>Industry and culture research for expanding website</li><li>Introduced to Kentico CMS</li><li>Experience working on a team, delegating tasks and working with other departments</li></ul>";
+			break;
+		case "nevs":
+			result = "<h3>Nev's Ink, Inc</h3> <p>May 2017 - February 2018</p> <h4>Activities Performed</h4><ul><li>Managed websites and social media</li><li>Upgraded to cloud server to improve page load time</li><li>Collaborated to launch new redesigne manufacturer and vendor bidding websites</li><li>Ensured social media presence by copywriting blog articles and social media posts</li><li>Improved Amazon listing and website images by photographing products and writing copy</li></ul>";
+			break;
+			
+		case "uwp":
+			result = "<h3>University of Wisconsin - Platteville</h3><p>December 2014 - January 2017</p><h4>Activities Performed</h4><ul><li>Collaborated with campus departments to implement and edit various webforms</li><li>Handled job fair sponsor graphics for the bi-annual job fair on campus to create image maps leading to each individual sponsor website</li>		<li>Corrected website spelling and grammer errors</li><li>Internship project - Migrating four Drupal content sections into one main section: the Academic Support Programs content section.</li></ul>";
+			break;
+			
+			case "csu":
+				result = "<h3>Cardinal Stritch University</h3><p>September 2012 - May 2013</p><h4>Activities Performed</h4><ul><li>Provided phone support for current students, teachers and alumni</li><li>Resetting passwords and troubleshooting various computer problems</li><li>Logged customer complaints and assigned to the appropriate representive if needed</li></ul>";
+			break;
+			
+			default:
+			result = "<h1>Click a job title for more information.</h1>";
+	}
+	document.getElementById("description").innerHTML = result;
+}
+	
+</script>
+
 	<h2>Relevant Work History</h2>
 
 <div class="exp">
