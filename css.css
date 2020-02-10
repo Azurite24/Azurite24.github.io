@@ -151,4 +151,7 @@ button:active{
 	.heading img{
 		width: 150px;
 	}
+	.portfolio-item{
+		width: 100%;
+}
 }
