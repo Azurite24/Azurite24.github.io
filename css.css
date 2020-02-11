@@ -126,6 +126,10 @@ button:active{
 	margin: 10px 5%;
 }
 
+.portfolio-item button{
+	width: 100%;
+}
+
 .portfolio-item h3{
 	text-align: center;
 }
